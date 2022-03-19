@@ -1,0 +1,58 @@
+.pg-title {
+    margin: 60px 0 0 60px;
+}
+
+.pg-subtitle {
+    margin: 10px 0 0 60px;
+}
+
+.pg-button-plain {
+    margin: 60px 0 0 60px;
+}
+
+.pg-button-line {
+    margin: 10px 0 0 60px;
+}
+
+.pg-button-fancy {
+    position: relative;
+    top: 3px;
+    margin: 10px 0 0 60px;
+}
+
+.pg-button-plain-disabled {
+    margin: 60px 0 0 60px;
+}
+
+.pg-button-line-disabled {
+    margin: 10px 0 0 60px;
+}
+
+.pg-button-fancy-disabled {
+    position: relative;
+    top: 3px;
+    margin: 10px 0 0 60px;
+}
+
+.pg-input-plain {
+    position: relative;
+    width: 337px;
+    margin: 60px 0 0 60px;
+}
+
+.pg-input-fancy {
+    position: relative;
+    width: 337px;
+    margin: 60px 0 0 60px;
+}
+
+.pg-checkbox-plain {
+    position: relative;
+    top: 40px;
+    margin: 60px 0 0 60px;
+}
+
+.pg-list-plain {
+    position: relative;
+    margin: 100px 0 0 60px;
+}

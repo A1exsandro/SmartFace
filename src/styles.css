@@ -1,0 +1,539 @@
+@font-face {
+    font-family: "Inter Thin";
+    src: url("./assets/font/Inter-Thin.ttf");          /* 100 */
+}
+
+@font-face {
+    font-family: "Inter Extra Light";
+    src: url("./assets/font/Inter-ExtraLight.ttf");    /* 200 */
+}
+
+@font-face {
+    font-family: "Inter Light";
+    src: url("./assets/font/Inter-Light.ttf");         /* 300 */
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("./assets/font/Inter-Regular.ttf");       /* 400 */
+}
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url("./assets/font/Inter-Medium.ttf");        /* 500 */
+}
+
+@font-face {
+    font-family: "Inter Semi Bold";
+    src: url("./assets/font/Inter-SemiBold.ttf");      /* 600 */
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("./assets/font/Inter-Bold.ttf");          /* 700 */
+}
+
+@font-face {
+    font-family: "Inter Extra Bold";
+    src: url("./assets/font/Inter-ExtraBold.ttf");     /* 800 */
+}
+
+@font-face {
+    font-family: "Inter Black";
+    src: url("./assets/font/Inter-Black.ttf");         /* 900 */
+}
+
+body {
+    background-color: #23272b;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: -6px;
+    left: 80px;
+    font-family: "Inter Light";
+    font-size: 28px;
+    font-weight: 300;
+    color: #b3bcc3;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    position: absolute;
+    top: 35px;
+    left: 80px;
+    font-family: "Inter Regular";
+    font-size: 16px;
+    font-weight: 400;
+    color: #545f69;
+    padding: 0;
+    margin: 0;
+}
+
+/* title plain */
+
+.title-plain {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Inter Light";
+    font-size: 28px;
+    font-weight: 300;
+    color: #b3bcc3;
+    padding: 0;
+    margin: 0;
+}
+
+/* subtitle plain */
+
+.subtitle-plain {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Inter Regular";
+    font-size: 16px;
+    font-weight: 400;
+    color: #545f69;
+    padding: 0;
+    margin: 0;
+}
+
+/* button plain */
+
+.button-plain {
+    padding: 10px 25px 11px 25px;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.05em !important;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #6650bb;
+    transition: all 0.5s;
+}
+
+.button-plain:hover {
+    background-color: #8670db;
+}
+
+.button-plain:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+/* button line */
+
+.button-line {
+    padding: 8px 20px 9px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #b3bcc3;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0;
+    border: 2px solid #434c53;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-line:hover {
+    border-color: #737c83;;
+    color: #fff;
+}
+
+.button-line:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+/* button fancy */
+
+.button-fancy {
+    padding: 5px 20px 5px 20px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0;
+    border: 2px solid #434c53;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-fancy span {
+    position: relative;
+    top: -3px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #b3bcc3;
+    transition: all 0.5s;
+}
+
+.button-fancy .button-icon {
+    position: relative;
+    top: 2px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.button-fancy .button-icon-shape {
+    transition: all 0.5s;
+}
+
+.button-fancy:hover {
+    border-color: #737c83;;
+}
+
+.button-fancy:hover span {
+    color: #fff;
+}
+
+.button-fancy:hover .button-icon .button-icon-shape {
+    fill: #fff;
+}
+
+.button-fancy:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+/* button plain disabled */
+
+.button-plain-disabled {
+    padding: 10px 25px 11px 25px;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.05em !important;
+    border: none;
+    border-radius: 0;
+    cursor: default;
+    color: #737c83;
+    background-color: #333c43;
+    transition: all 0.5s;
+}
+
+.button-plain-disabled:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+/* button line disabled */
+
+.button-line-disabled {
+    padding: 8px 20px 9px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #535c63;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0;
+    border: 2px solid #333c43;
+    background: none;
+    cursor: default;
+    transition: all 0.5s;
+}
+
+.button-line-disabled:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+/* button fancy disabled */
+
+.button-fancy-disabled {
+    padding: 5px 20px 5px 20px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0;
+    border: 2px solid #333c43;
+    background: none;
+    cursor: default;
+    transition: all 0.5s;
+}
+
+.button-fancy-disabled span {
+    position: relative;
+    top: -3px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #535c63;
+    transition: all 0.5s;
+}
+
+.button-fancy-disabled .button-icon {
+    position: relative;
+    top: 2px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.button-fancy-disabled .button-icon-shape {
+    fill: #535c63;
+    transition: all 0.5s;
+}
+
+.button-fancy-disabled:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+/* input plain */
+
+.input-plain {
+    display: block;
+    height: 40px;
+}
+
+.input-plain input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 34px);
+    height: 32px;
+    padding: 1px 10px 3px 20px;
+    font-family: "Inter Regular";
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #2e3439;
+    border-radius: 0;
+    color: #fff;
+    outline: none;
+    background-color: #2e3439;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
+.input-plain input:focus {
+    border-color: #585e63;
+}
+
+.input-plain input::placeholder {
+    color: #6e7e92;
+    opacity: 1;
+}
+
+.input-plain input::-ms-input-placeholder {
+    color: #6e7e92;
+}
+
+/* input fancy */
+
+.input-fancy {
+    display: block;
+    height: 44px;
+}
+
+.input-fancy input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 70px);
+    height: 32px;
+    padding: 3px 6px 5px 60px;
+    font-family: "Inter Regular";
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #2e3439;
+    border-radius: 0;
+    color: #fff;
+    outline: none;
+    background-color: #2e3439;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
+.input-fancy input:focus {
+    border-color: #585e63;
+}
+
+.input-fancy input::placeholder {
+    color: #6e7e92;
+    opacity: 1;
+}
+
+.input-fancy input::-ms-input-placeholder {
+    color: #6e7e92;
+}
+
+.input-fancy .input-icon {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    z-index: 1;
+}
+
+/* checkbox plain */
+
+.checkbox-plain {
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.checkbox-target {
+    display: none;
+}
+
+.checkbox-target:checked ~ .checkbox-icon {
+    border-color: #bbb;
+}
+
+.checkbox-target:checked ~ .checkbox-icon .checkbox-icon-shape {
+    fill: #fff;
+}
+
+.checkbox-icon {
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    margin: 0;
+    border: 2px solid #585e63;
+    background-color: #23272b;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.checkbox-icon-shape {
+    transition: all 0.3s;
+}
+
+.checkbox-plain small {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    color: #b3bcc3;
+    cursor: pointer;
+}
+
+/* list plain */
+
+.list-plain {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background-color: #2e3439;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.list-plain div {
+    height: 32px;
+    background-color: #2e3439;
+}
+
+.list-plain span {
+    position: relative;
+    top: 6px;
+    left: 0;
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+    float: left;
+    font-family: "Inter Light";
+    font-size: 16px;
+    font-weight: 300;
+    color: #b3bcc3;
+    transition: all 0.5s;
+    /* background-color: #890; */
+}
+
+.list-plain .arrow {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    padding: 9px 20px 8px 0px;
+    margin: 0;
+    float: right;
+    /* background-color: #ddd; */
+}
+
+.list-plain .arrow-shape {
+    transition: all 0.5s;
+}
+
+.list-plain div:hover span {
+    color: #fff;
+}
+
+.list-plain div:hover .arrow-shape {
+    fill: #fff;
+}
+
+.list-plain ul {
+    position: relative;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.list-plain ul li {
+    top: 0;
+    left: 0;
+    padding: 6px 20px 6px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: #b3bcc3;
+    background-color: #383e43;
+    transition: all 0.3s !important;
+}
+
+.list-plain ul li:hover {
+    background-color: #16191c;
+}

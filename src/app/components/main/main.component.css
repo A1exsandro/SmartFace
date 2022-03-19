@@ -1,0 +1,494 @@
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #16191c;
+    transition: width 0.3s;
+
+    /* Impede que o texto seja selecionado. */
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+aside header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 96px;
+    background-color: #111;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.smartface-icon {
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.smartface-icon-shape {
+    transition: all 0.5s;
+}
+
+.smartface-icon:hover .smartface-icon-shape {
+    fill: #fff;
+}
+
+.smartface-mark {
+    position: absolute;
+    top: 34px;
+    left: 80px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    color: #b3bcc3;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.smartface-mark:hover {
+    color: #fff;
+}
+
+/* OPEN/CLOSE ASIDE */
+
+.extend {
+    position: absolute;
+    top: 116px;
+    left: 234px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.extend-shape {
+    transition: all 0.5s;
+}
+
+.extend:hover .extend-shape {
+    fill: #fff;
+}
+
+#aside-panel {
+    display: none;
+}
+
+#aside-panel:checked ~ aside {
+    width: 80px;
+}
+
+#aside-panel:checked ~ aside header {
+    width: 80px;
+}
+
+#aside-panel:checked ~ aside .extend {
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+#aside-panel:checked ~ aside .smartface-icon {
+    left: 23px;
+    width: 32px;
+    height: 32px;
+}
+
+#aside-panel:checked ~ aside .list-label {
+    height: 0;
+}
+
+#aside-panel:checked ~ aside .list {
+    top: 156px;
+    width: 80px;
+}
+
+#aside-panel:checked ~ aside .list li {
+    width: 80px;
+}
+
+
+#aside-panel:checked ~ aside .list-icon {
+    left: 24px;
+}
+
+#aside-panel:checked ~ aside .list li a {
+    visibility: hidden;
+}
+
+#aside-panel:checked ~ aside hr {
+    top: 184px;
+    left: 0px;
+    width: 40px;
+    margin-bottom: 64px;
+}
+
+#aside-panel:checked ~ aside .panic {
+    left: -200px;
+}
+
+#aside-panel:checked ~ aside .panic-icon {
+    left: 30px;
+}
+
+
+#aside-panel:checked ~ main {
+    left: 80px;
+    width: calc(100% - 80px);
+}
+
+/* OPEN/CLOSE ASIDE */
+
+.list-label {
+    position: relative;
+    top: 156px;
+    left: 40px;
+    width: 100px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Semi Bold";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05em !important;
+    color: #52a873;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.list {
+    position: relative;
+    top: 184px;
+    left: 0;
+    width: 280px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.list li {
+    position: relative;
+    display: block;
+    padding: 14px 0px 10px 35px;
+    margin: 0;
+    border-left: 6px solid #16191c;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list-icon {
+    position: absolute;
+    top: 11px;
+    left: 35px;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.list li a {
+    position: relative;
+    top: -1px;
+    left: 42px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    text-decoration: none;
+    color: #848f99;
+    transition: all 0.3s;
+}
+
+.list li:hover {
+    background-color: #949fa9;
+    border-color: #949fa9;
+}
+
+.list li:hover a {
+    color: #202326;
+}
+
+.list-icon-shape {
+    transition: all 0.3s;
+}
+
+.list li:hover .list-icon-shape {
+    fill: #202326;
+}
+
+.list .selected {
+    background-color: #202326;
+    border-color: #7660cb;
+}
+
+.list .selected:hover {
+    border-color: #545f69;
+}
+
+aside hr {
+    position: relative;
+    top: 214px;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    border: none;
+    margin-bottom: 100px;
+    background-color: #34373a;
+}
+
+.panic {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.15em !important;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: #ff1e3b;
+    border: 2px solid #505356;
+    background: none;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.panic:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.panic:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+.panic-icon {
+    position: absolute;
+    bottom: 30px;
+    left: -22px;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.panic-icon-shape {
+    transition: all 0.5s;
+}
+
+.panic-icon:hover .panic-icon-shape {
+    fill: #fff;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 280px;
+    width: calc(100% - 280px);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    transition: all 0.3s;
+    overflow-y: auto;
+    /* background-color: #fff; */
+
+    /* Impede que o texto seja selecionado. */
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+main::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #23272b;
+}
+
+main::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #404346;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background: #606366;
+}
+
+
+main::-webkit-scrollbar-corner {
+    background: #23272b;
+}
+
+.user-authenticated {
+    top: 0;
+    left: 0;
+    height: 32px;
+    float: right;
+    padding: 0px;
+    margin: 32px 0px 0px 0px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background-color: #2e3439;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.user-container {
+    height: 32px;
+}
+
+.user-name {
+    position: relative;
+    top: -10px;
+    left: 0;
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 16px;
+    font-weight: 300;
+    color: #b3bcc3;
+    transition: all 0.5s;
+    /*background-color: #890;*/
+}
+
+.user-arrow {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    padding: 9px 20px 8px 0px;
+    margin: 0;
+    /*background-color: #ddd;*/
+}
+
+.user-arrow-shape {
+    transition: all 0.5s;
+}
+
+.user-container:hover .user-name {
+    color: #fff;
+}
+
+.user-container:hover .user-arrow-shape {
+    fill: #fff;
+}
+
+.user-panel {
+    position: relative;
+    height: 0;
+    background-color: #383e43;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.profile {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    padding: 0px 0px 0px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 16px;
+    font-weight: 300;
+    color: #b3bcc3;
+}
+
+.user-panel:hover {
+    background-color: #16191c;
+}
+
+.logout {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding: 6px 10px;
+    margin: 32px 40px 0px 0px;
+    background-color: #16191c;
+    cursor: pointer;
+}
+
+.logout-shape {
+    transition: all 0.5s;
+}
+
+.logout:hover .logout-shape {
+    fill: #fff;
+}
+
+.notification, .correspondence {
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    float: right;
+    padding: 0;
+    margin: 36px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.notification-shape, .correspondence-shape {
+    transition: all 0.5s;
+}
+
+.notification:hover .notification-shape, .correspondence:hover .correspondence-shape {
+    fill: #fff;
+}
+
+app-home, app-monitoring, app-persons,
+app-management, app-system, app-reports,
+app-settings, app-help, app-contact {
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-height: 824px) {
+    .panic {
+        top: 755px;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .panic-icon {
+        top: 628px;
+    }
+}

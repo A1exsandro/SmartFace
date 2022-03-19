@@ -1,0 +1,279 @@
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 408px;
+    padding: 0;
+    margin: 0;
+    margin-top: -204px;
+    margin-left: -200px;
+
+    /* Impede que o texto seja selecionado. */
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    /* background-color: #890; */
+}
+
+.smartface-icon {
+    position: relative;
+    display: inline;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.smartface-icon-shape {
+    transition: all 0.5s;
+}
+
+.smartface-icon:hover .smartface-icon-shape {
+    fill: #fff;
+}
+
+.smartface-mark {
+    position: relative;
+    display: inline;
+    top: -6px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    color: #b3bcc3;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.smartface-mark:hover {
+    color: #fff;
+}
+
+/* INPUT */
+
+.login-field {
+    position: relative;
+    display: block;
+    top: 40px;
+    margin-bottom: 60px;
+}
+
+.login-field input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 32px;
+    padding: 3px 6px 5px 60px;
+    font-family: "Inter Regular";
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #2e3439;
+    border-radius: 0;
+    color: #fff;
+    outline: none;
+    background-color: #2e3439;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
+.login-field input:focus {
+    border-color: #585e63 !important;
+}
+
+.login-field input::placeholder {
+    color: #6e7e92;
+    opacity: 1;
+}
+
+.login-field input::-ms-input-placeholder {
+    color: #6e7e92;
+}
+
+.login-field svg {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    z-index: 1;
+}
+
+.flag-field {
+    position: relative;
+    display: block;
+    top: 124px;
+    left: 0;
+    width: 210px;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.flag-field p {
+    position: absolute;
+    top: 0;
+    left: -210px;
+    width: 210px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: 0.06em !important;
+    color: #ff1e3b;
+    transition: all 0.3s;
+}
+
+#remember {
+    display: none;
+}
+
+#remember:checked ~ .remember-field .check-mark {
+    border-color: #bbb;
+}
+
+#remember:checked ~ .remember-field .check-mark .check-mark-shape {
+    fill: #fff;
+}
+
+.remember-field {
+    position: relative;
+    display: block;
+    top: 124px;
+    left: 0;
+    width: 132px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s;
+    /* background-color: #444; */
+}
+
+.check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    margin: 0;
+    border: 2px solid #585e63;
+    background-color: #23272b;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.check-mark-shape {
+    transition: all 0.3s;
+}
+
+.remember-field small {
+    position: absolute;
+    top: 3px;
+    left: 44px;
+    font-family: "Inter Regular";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em !important;
+    color: #b3bcc3;
+    cursor: pointer;
+}
+
+button {
+    position: relative;
+    top: 164px;
+    left: 0;
+    width: 400px;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.05em !important;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #6650bb;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #8670db;
+}
+
+button:focus {
+    outline-style: none; /* Remove a borda azul no estado de foco. */
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 478px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .smartface-icon {
+        display: block;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+        margin-bottom: 15px;
+    }
+
+    .smartface-mark {
+        display: block;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .login-field input {
+        width: calc(100% - 150px);
+        margin: 0px 40px;
+    }
+
+    .login-field svg {
+
+        margin-left: 40px;
+    }
+
+    .flag-field {
+        margin-left: 40px;
+    }
+
+    .remember-field {
+        margin-left: 40px;
+    }
+
+    button {
+        width: calc(100% - 80px);
+        margin: 0px 40px;
+    }
+}

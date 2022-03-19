@@ -1,0 +1,173 @@
+.layout-box {
+    position: relative;
+    top: 76px;
+    left: 80px;
+    height: 32px;
+    float: left;
+    padding: 0px;
+    margin: 32px 0px 0px 0px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.layout-container {
+    height: 32px;
+    border: 2px solid #434c53;
+    transition: all 0.5s;
+}
+
+.layout-name {
+    position: relative;
+    top: -10px;
+    left: 0;
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #737c83;
+    transition: all 0.5s;
+    /*background-color: #890;*/
+}
+
+.layout-name span {
+    transition: all 0.5s;
+    color: #b3bcc3;
+    padding-left: 4px;
+}
+
+.layout-arrow {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    padding: 9px 20px 8px 0px;
+    margin: 0;
+    /*background-color: #ddd;*/
+}
+
+.layout-arrow-shape {
+    transition: all 0.5s;
+}
+
+.layout-container:hover .layout-name span {
+    color: #fff;
+}
+
+.layout-container:hover {
+    border-color: #737c83;
+}
+
+.layout-container:hover .layout-arrow-shape {
+    fill: #fff;
+}
+
+.layout-select-panel {
+    position: relative;
+    top: 0;
+    height: 0;
+    background-color: #383e43;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.layout-select-panel ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.layout-select-panel ul li {
+    position: relative;
+    display: block;
+    padding: 7px 0px 6px 22px;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    text-decoration: none;
+    text-align: left;
+    color: #848f99;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.layout-select-panel ul li:hover {
+    background-color: #16191c;
+}
+
+.camera-container, .recognition-container {
+    position: relative;
+    top: 108px;
+    left: 80px;
+    height: 36px;
+    margin-left: 50px;
+    float: left;
+    background-color: #2e3439;
+}
+
+.camera-icon, .recognition-icon {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+.camera-label, .recognition-label {
+    position: absolute;
+    top: 9px;
+    left: 56px;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    color: #848f99;
+}
+
+.camera-number, .recognition-number {
+    position: relative;
+    display: inline-block;
+    top: 9px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #52a873;
+}
+
+.camera-number {
+    margin-left: 144px;
+}
+
+.recognition-number {
+    margin-left: 140px;
+}
+
+app-camera {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 340px;
+    margin: 0px 50px 36px 0px;
+}
+
+section {
+    position: absolute;
+    top: 244px; /* 194px */
+    left: 80px;
+    padding-bottom: 20px;
+}

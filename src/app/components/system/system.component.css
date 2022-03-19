@@ -1,0 +1,444 @@
+ul {
+    position: relative;
+    display: block;
+    top: 86px;
+    left: 80px;
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 160px);
+    list-style-type: none;
+    border-bottom: 1px solid #3e4449;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 5px 0px 10px 0px;
+    border-bottom: 6px solid #23272b;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+ul li .tab-icon {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+ul li .tab-icon .tab-icon-shape {
+    transition: all 0.5s;
+}
+
+ul li span {
+    position: relative;
+    top: -5px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    color: #737c83;
+    transition: all 0.5s;
+}
+
+ul li:hover span {
+    color: #fff;
+}
+
+ul li:hover .tab-icon .tab-icon-shape {
+    fill: #fff;
+}
+
+ul .selected {
+    padding: 5px 20px 10px 20px;
+    border-color: #7660cb;
+}
+
+ul .selected span {
+    color: #b3bcc3;
+}
+
+ul .selected .tab-icon .tab-icon-shape {
+    fill: #b3bcc3;
+}
+
+ul .selected:hover {
+    border-color: #a690fb;
+}
+
+.section-system {
+    position: relative;
+    top: 140px;
+    left: 80px;
+    width: calc(100% - 160px);
+    margin-bottom: 170px;
+}
+
+.section-historic {
+    display: block;
+}
+
+.section-releases {
+    display: none;
+}
+
+.section-occurrences {
+    display: none;
+}
+
+.section-correspondence {
+    display: none;
+}
+
+.section-system h3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    font-family: "Inter Light";
+    font-size: 20px;
+    font-weight: 300;
+    color: #b3bcc3;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3e4449;
+}
+
+.section-system h4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    font-family: "Inter Light";
+    font-size: 18px;
+    font-weight: 300;
+    color: #939ca3;
+    letter-spacing: 0.05em !important;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.section-system h4 span {
+    color: #52a873;
+}
+
+.section-system small {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 168px;
+    padding: 10px 0px 11px 22px;
+    margin: 0;
+    margin-top: 30px;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    color: #737c83;
+    background-color: #2e3439;
+}
+
+.section-system small span {
+    color: #52a873;
+}
+
+table {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+th {
+    font-family: "Inter Medium";
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #747f89;
+    padding: 14px 18px;
+    margin: 0;
+}
+
+td {
+    font-family: "Inter Light";
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #b3bcc3;
+    padding: 14px 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+tr .first {
+    border-left: 6px solid #33373b;
+}
+
+tr:nth-child(even) {
+    background-color: #33373b;
+    border-color: #7660cb;
+}
+
+tr:nth-child(even) .first {
+    border-color: #7660cb;
+}
+
+tr:hover {
+    background-color: #191d21;
+    border-color: #f00;
+}
+
+.table-head .first {
+    border-color: #23272b;
+}
+
+.table-head {
+    background-color: #23272b;
+}
+
+.table-head:hover {
+    background-color: #23272b;
+}
+
+.edit-icon, .trash-icon {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: right;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.edit-icon-shape, .trash-icon-shape {
+    transition: all 0.5s;
+}
+
+.edit-icon:hover .edit-icon-shape, .trash-icon:hover .trash-icon-shape {
+    fill: #fff;
+}
+
+.table-releases-status-authorized {
+    color: #52a873;
+}
+
+.table-releases-status-unauthorized {
+    color: #df1e3b;
+}
+
+.table-releases-status-pending {
+    color: #b3bcc3;
+}
+
+/* Histórico */
+
+.section-historic h5 {
+    position: relative;
+    display: block;
+    margin-top: 120px;
+    font-family: "Inter Medium";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #545f69;
+    text-align: center;
+}
+
+/* Liberações */
+
+.releases-filters {
+    position: relative;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.releases-filters label {
+    position: relative;
+}
+
+.releases-status-box {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 36px;
+    float: left;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.releases-status-container {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 36px;
+    border: 2px solid #434c53;
+    transition: all 0.5s;
+}
+
+.releases-status-container .releases-status-name {
+    position: relative;
+    top: 8px;
+    left: 0;
+    float: left;
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+    font-family: "Inter Light";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.05em !important;
+    text-align: left;
+    color: #737c83;
+    transition: all 0.5s;
+    background: none;
+    white-space: nowrap;
+}
+
+.releases-status-container .releases-status-name span {
+    transition: all 0.5s;
+    color: #b3bcc3;
+    padding-left: 4px;
+}
+
+.releases-status-container .releases-status-arrow {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 15px;
+    height: 15px;
+    padding: 11px 20px 10px 10px;
+    margin: 0;
+    margin-left: -45px;
+    background-color: #23272b;
+}
+
+.releases-status-container .releases-status-arrow-shape {
+    transition: all 0.5s;
+}
+
+.releases-status-container:hover .releases-status-name span {
+    color: #fff;
+}
+
+.releases-status-container:hover {
+    border-color: #737c83;
+}
+
+.releases-status-container:hover .releases-status-arrow-shape {
+    fill: #fff;
+}
+
+.releases-status-select-panel {
+    position: relative;
+    top: 0;
+    height: 0;
+    background-color: #383e43;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.releases-status-select-panel ul {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.releases-status-select-panel ul li {
+    position: relative;
+    display: block;
+    padding: 7px 0px 6px 22px;
+    margin: 0;
+    font-family: "Inter Regular";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em !important;
+    text-decoration: none;
+    text-align: left;
+    color: #848f99;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.releases-status-select-panel ul li:hover {
+    background-color: #16191c;
+}
+
+/* Ocorrências */
+
+.occurrences-container-form {
+    position: relative;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.occurrences-container-form label {
+    position: relative;
+}
+
+.occurrences-container-form button {
+    position: relative;
+}
+
+/* Correspondências */
+
+.correspondence-container-form {
+    position: relative;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.correspondence-container-form label {
+    position: relative;
+}
+
+.correspondence-container-form button {
+    position: relative;
+}
+
+.section-correspondence small {
+    width: 222px;
+}
